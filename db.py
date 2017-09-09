@@ -1,11 +1,5 @@
-'''
-What data is relevant to store?
-
-TABLE STOCKS
-STOCK NAME | STOCK TICKER
-'''
-
 from tinydb import TinyDB, where
+
 db = TinyDB('db/db.json')
 
 # Insert into database
@@ -17,13 +11,10 @@ def db_insert(name, ticker):
         after = len(db)
 
         if (after > before):
-            print("insert: success")
             return True
         else:
-            print("insert: failure")
             return False
     else:
-        print("insert: already exist")
         return False
 
 
@@ -36,13 +27,10 @@ def db_delete(ticker):
         after = len(db)
 
         if (before > after):
-            print("delete: success")
             return True
         else:
-            print("delete: failure")
             return False
     else:
-        print("delete: does not exist")
         return False
 
 
