@@ -1,6 +1,6 @@
 # NorwegianStocks
 
-NorwegianStocks is a tiny Python-script used for testing of event handling of .pdf documents with tabula-py, for scraping table contents.
+NorwegianStocks is a tiny Python-script used for testing of event handling of .pdf documents with tabula-py, for scraping table contents. The script takes the latest .pdf of all norwegian stocks on Oslo Børs and scrapes all contents from the table into a .csv file, before storing the stock names and tickers into a NoSQL database, tinyDB.
 
 ## How to Use
 
